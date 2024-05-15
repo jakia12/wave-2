@@ -18696,7 +18696,7 @@ hr + .nk-block {
 }
 
 .has-fixed.is-dark .header-main {
-  background: #fffffd;
+  background: #331074;
 }
 
 .has-fixed.is-shrink .header-main {
@@ -19149,7 +19149,7 @@ hr + .nk-block {
 }
 
 .is-dark .menu-item a {
-  color: #000002;
+  color: white;
 }
 
 .menu-item > a.active {
