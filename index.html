@@ -25,8 +25,8 @@
     <style>
       #image_logo {
         display: none;
-        width: 70px;
-        height: 70px;
+        width: 65px;
+        height: 65px;
       }
     </style>
   </head>
@@ -80,11 +80,7 @@
                     data-delay=".8"
                     style="visibility: visible; animation-delay: 0.8s"
                   >
-                    <img
-                      style="width: 80px; height: 80px"
-                      id="image_logo"
-                      src="./image/logo.png"
-                    />
+                    <img id="image_logo" src="./image/logo.png" />
                   </h1>
                 </a>
               </div>
@@ -907,7 +903,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const image = document.getElementById("image_logo");
-        const scrollThreshold = 130; // Adjust this value to your desired scroll position
+        const scrollThreshold = 100; // Adjust this value to your desired scroll position
 
         window.addEventListener("scroll", function () {
           if (window.scrollY > scrollThreshold) {
