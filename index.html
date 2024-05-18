@@ -22,6 +22,13 @@
       rel="stylesheet"
     />
     <!-- Social Media -->
+    <style>
+      #image_logo {
+        display: none;
+        width: 70px;
+        height: 70px;
+      }
+    </style>
   </head>
   <!-- linear-gradient(to right, #8e54cf, #549ec1, #0cd395); -->
 
@@ -73,10 +80,11 @@
                     data-delay=".8"
                     style="visibility: visible; animation-delay: 0.8s"
                   >
-                    <!-- <img
+                    <img
                       style="width: 80px; height: 80px"
+                      id="image_logo"
                       src="./image/logo.png"
-                    /> -->
+                    />
                   </h1>
                 </a>
               </div>
@@ -896,5 +904,19 @@
     <script src="assets/js/jquery.bundle0643064306430643.js?ver=1950"></script>
     <script src="assets/js/scripts0643064306430643.js?ver=1950"></script>
     <script src="assets/js/charts0643064306430643.js?ver=1950"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const image = document.getElementById("image_logo");
+        const scrollThreshold = 150; // Adjust this value to your desired scroll position
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > scrollThreshold) {
+            image.style.display = "block";
+          } else {
+            image.style.display = "none";
+          }
+        });
+      });
+    </script>
   </body>
 </html>
